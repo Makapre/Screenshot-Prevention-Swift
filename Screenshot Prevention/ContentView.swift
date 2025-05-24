@@ -13,7 +13,9 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
+                .preventScreenshot()
             Text("Hello, world!")
+                .screenshotProtected(isProtected: true)
         }
         .padding()
     }
